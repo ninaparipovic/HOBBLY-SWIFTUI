@@ -28,12 +28,17 @@ struct AppView: View {
     @State var selectedIndex = 0
     @State var addModal = false
 
-    @State private var ActivityName = ""
-    @State private var ActivityPrice = ""
+    @State private var ActivityTitle = ""
+    @State private var ActivityCost = ""
+    @State private var ActivityDuration = ""
+    @State private var ActivityLocation = ""
+    @State private var CategoryName = ""
+
     @State private var timeSelection: Int = 0
 
     let tabBarImageNames = ["house.fill", "person.2.fill", "plus.circle", "magnifyingglass", "person.fill"]
     let tabBarNames = ["Home", "Community", "Add", "Search", "Profile"]
+    let categories = ["Food", "Art", "Fitness", "Outdoors", "Education"]
 
     var body: some View {
         VStack(spacing: 0) {
@@ -43,6 +48,21 @@ struct AppView: View {
 
                         VStack {
                             VStack {
+                                Section(header: Text("Title")) {
+                                    TextField("", text: $ActivityTitle)
+                                }
+                                Section(header: Text("Cost")) {
+                                    TextField("", text: $ActivityCost)
+                                }
+                                Section(header: Text("Duration")) {
+                                    TextField("", text: $ActivityDuration)
+                                }
+                                Section(header: Text("Location")) {
+                                    TextField("", text: $ActivityLocation)
+                                }
+                                Section(header: Text("Category Name")) {
+                                    TextField("", text: $CategoryName)
+                                }
                                 ForEach(categoryStore.categories) { category in
                                     Text(category.title)
                                     ForEach(category.activities) { activity in
@@ -62,20 +82,9 @@ struct AppView: View {
                                         categoryStore.delete(categoryID: category._id)
                                     }
                                 }
-    //                            ForEach(activityStore.activities) { activity in
-    //                                Text(activity.title)
-    //                            }
-
-                                Button("add category") {
-                                    categoryStore.create(title: "sup")
+                                Button("add activity to store") {
+                                    activityStore.create(title: ActivityTitle, duration: Int(ActivityDuration) ?? 0, cost: Int(ActivityCost) ?? 0, location: ActivityLocation, categoryName: CategoryName)
                                 }
-
-                            }
-                            Section(header: Text("name")) {
-                                TextField("", text: $ActivityName)
-                            }
-                            Section(header: Text("price")) {
-                                TextField("", text: $ActivityPrice)
                             }
                             Button(action: {addModal.toggle()}, label: {
                                 Text("dismiss modal")
@@ -85,7 +94,7 @@ struct AppView: View {
                 switch selectedIndex {
                 case 0:
                     NavigationView {
-                        HomeView(activities: activityStore.activities, categories: categoryStore.categories)
+                        HomeView(activities: activityStore.activities, categories: categories )
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
                     }

@@ -19,31 +19,55 @@ struct ActivityDetail: View {
 //                    .aspectRatio(contentMode: .fit)
 //                    .foregroundColor(.white)
                     Image(systemName: "arrow.backward.circle.fill")
-                        .foregroundColor(.white)
+//                        .foregroundColor(.white)
+                        .font(.title)
                 }
             }
         }
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ZStack(alignment: .topLeading) {
-                Color(red: 0.102, green: 0.369, blue: 0.388)
+//                Color(.white)
                 Image(activity.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(7)
-                btnBack
+                    btnBack
             }
-            HStack {
-                Text(activity.title)
-                Spacer()
+            GeometryReader { _ in
+                ZStack(alignment: .topLeading) {
+                    HStack {
+                        Text(activity.title)
+                            .font(Font.custom("Futura", size: 28))
+                            .foregroundColor(Color(red: 0.102, green: 0.369, blue: 0.388))
+                    }
+                    .padding()
+                }
             }
-
+            .frame(height: 50)
+                VStack {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Details")
+                            Text("$\(activity.cost) per person")
+                        }
+                        Spacer()
+                        VStack {
+                            HStack {
+                                Image(systemName: "mappin")
+                                Text(activity.location)
+                            }
+                            Spacer()
+                        }
+                    }.padding()
+                    Spacer()
+                }
+Spacer()
         }
 
             .navigationBarBackButtonHidden(true)
             .navigationBarHidden(true)
-//            .navigationBarItems(leading: btnBack)
+            .navigationBarTitle("")
     }
 
 }

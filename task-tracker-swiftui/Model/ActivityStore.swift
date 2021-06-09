@@ -24,7 +24,7 @@ final class ActivityStore: ObservableObject {
 extension ActivityStore {
 
     // need to specify which category
-    func create(title: String, duration: Int, cost: Int, location: String) -> Activity {
+    func create(title: String, duration: Int, cost: Int, location: String, categoryName: String) -> Activity {
     objectWillChange.send()
 
         let activity = Activity()
@@ -34,6 +34,7 @@ extension ActivityStore {
           activity.duration = 20
           activity.cost = 10
           activity.location = "Hanover, NH"
+        activity.categoryName = categoryName
 
     do {
       let realm = try Realm()
