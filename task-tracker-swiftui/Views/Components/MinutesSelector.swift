@@ -9,16 +9,14 @@ import SwiftUI
 
 struct MinutesSelector: View {
     @Binding var timeSelection: Int
+    let numbers: [Int]
 
-       let numbers = [Int](0...60)
     var body: some View {
-
         ZStack {
             Color(red: 0.102, green: 0.369, blue: 0.388)
             VStack {
                 HStack {
                         Text("I HAVE")
-
                                 Picker("Number", selection: $timeSelection) {
                                                ForEach(0..<numbers.count) { index in
                                                    Text("\(self.numbers[index])")

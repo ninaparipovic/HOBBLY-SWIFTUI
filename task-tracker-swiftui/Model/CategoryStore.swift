@@ -27,19 +27,66 @@ extension CategoryStore {
 
     do {
       let realm = try Realm()
-
       let category = Category()
         category._id = UUID().hashValue
         category.title = title
 
+        let activity = Activity()
+        activity._id = UUID().hashValue
+        activity.title = title
+        activity.duration = 10
+
+        let activity2 = Activity()
+        activity2._id = UUID().hashValue
+        activity2.title = title
+        activity.duration = 30
+
       try realm.write {
         realm.add(category)
+        realm.add(activity)
+        realm.add(activity2)
+        category.activities.append(activity)
+        category.activities.append(activity2)
+
       }
     } catch let error {
       // Handle error
       print(error.localizedDescription)
     }
   }
+
+    func addActivity(category: Category, activity: Activity) {
+        objectWillChange.send()
+        do {
+          let realm = try Realm()
+          try realm.write {
+            category.activities.append(activity)
+          }
+        } catch let error {
+          // Handle error
+          print(error.localizedDescription)
+        }
+    }
+
+    func addActivity2(category: Category, title: String) {
+        objectWillChange.send()
+
+        let activity = Activity()
+          activity._id = UUID().hashValue
+          activity.title = title
+
+    do {
+      let realm = try Realm()
+      try realm.write {
+        realm.add(activity)
+        category.activities.append(activity)
+
+      }
+    } catch let error {
+      // Handle error
+      print(error.localizedDescription)
+    }
+    }
 
 //  func toggleBought(ingredient: Ingredient) {
 //    objectWillChange.send()

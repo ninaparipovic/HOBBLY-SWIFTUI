@@ -44,6 +44,7 @@ class AppState: ObservableObject {
             .sink(receiveCompletion: { result in
                 if case let .failure(error) = result {
                     self.error = "Failed to log in and open realm: \(error.localizedDescription)"
+                    print(error.localizedDescription)
                 }
             }, receiveValue: { realm in
                 print("Realm User file location: \(realm.configuration.fileURL!.path)")

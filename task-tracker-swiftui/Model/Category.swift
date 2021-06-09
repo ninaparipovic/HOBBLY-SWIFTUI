@@ -13,7 +13,7 @@ class Category: Object, Identifiable {
     @objc dynamic var title = ""
     @objc dynamic var image = "cookies"
 
-    var activities = List<Activity>()
+    let activities = List<Activity>()
 
     override static func primaryKey() -> String? {
       "_id"

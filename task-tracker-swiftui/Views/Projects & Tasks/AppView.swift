@@ -40,7 +40,37 @@ struct AppView: View {
             ZStack {
                 Spacer()
                     .fullScreenCover(isPresented: $addModal, content: {
+
                         VStack {
+                            VStack {
+                                ForEach(categoryStore.categories) { category in
+                                    Text(category.title)
+                                    ForEach(category.activities) { activity in
+                                        Text(activity.title)
+                                    }
+                                    Button("add activity") {
+                                        categoryStore.addActivity2(category: category, title: "hi")
+    //                                    let activity = activityStore.create(title: "new boi")
+    //                                    let activity = Activity()
+    //                                    activity._id = UUID().hashValue
+    //                                    activity.title = "activity title"
+    //                                    categoryStore.addActivity(category: category, activity: activity)
+                                        print(category.activities)
+    //                                    category.activities.append(activity)
+                                    }
+                                    Button("delete category") {
+                                        categoryStore.delete(categoryID: category._id)
+                                    }
+                                }
+    //                            ForEach(activityStore.activities) { activity in
+    //                                Text(activity.title)
+    //                            }
+
+                                Button("add category") {
+                                    categoryStore.create(title: "sup")
+                                }
+
+                            }
                             Section(header: Text("name")) {
                                 TextField("", text: $ActivityName)
                             }
@@ -55,31 +85,7 @@ struct AppView: View {
                 switch selectedIndex {
                 case 0:
                     NavigationView {
-//                        VStack {
-//                            ForEach(categoryStore.categories) { category in
-//                                Text(category.title)
-//                                ForEach(category.activities) { activity in
-//                                    Text(activity.title)
-//                                }
-//                                Button("add activity") {
-//                                    let activity = activityStore.create(title: "new boi")
-////                                    let activity = Activity()
-////                                    activity._id = UUID().hashValue
-////                                    activity.title = "activity title"
-//                                    category.activities.append(activity)
-//                                }
-//                            }
-//                            Text("oops")
-//                            ForEach(activityStore.activities) { activity in
-//                                Text(activity.title)
-//                            }
-//
-//                            Button("add category") {
-//                                categoryStore.create(title: "new category")
-//                            }
-//                        }
-
-                            HomeView(activities: activityStore.activities)
+                        HomeView(activities: activityStore.activities, categories: categoryStore.categories)
                                 .navigationBarTitle("")
                                 .navigationBarHidden(true)
                     }

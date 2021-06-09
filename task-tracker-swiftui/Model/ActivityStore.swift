@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 final class ActivityStore: ObservableObject {
-  private var acitvityResults: Results<Activity>
+   var acitvityResults: Results<Activity>
 
   init(realm: Realm) {
     acitvityResults = realm.objects(Activity.self)
@@ -24,22 +24,24 @@ final class ActivityStore: ObservableObject {
 extension ActivityStore {
 
     // need to specify which category
-    func create(title: String) -> Activity {
+    func create(title: String, duration: Int, cost: Int, location: String) -> Activity {
     objectWillChange.send()
 
         let activity = Activity()
           activity._id = UUID().hashValue
+//        activity._partition =
           activity.title = title
+          activity.duration = 20
+          activity.cost = 10
+          activity.location = "Hanover, NH"
 
     do {
       let realm = try Realm()
-
       try realm.write {
         realm.add(activity)
       }
         return activity
     } catch let error {
-      // Handle error
       print(error.localizedDescription)
     }
         return activity
