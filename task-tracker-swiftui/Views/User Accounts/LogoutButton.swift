@@ -2,7 +2,6 @@
 //  LogoutButton.swift
 //  task-tracker-swiftui
 //
-//  Created by Andrew Morgan on 03/11/2020.
 //
 
 import SwiftUI
@@ -22,6 +21,7 @@ struct LogoutButton: View {
                 })
                 .store(in: &state.cancellables)
         }
+        .foregroundColor(Color(red: 0.102, green: 0.369, blue: 0.388))
         .disabled(state.shouldIndicateActivity)
     }
 }

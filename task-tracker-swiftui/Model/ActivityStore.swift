@@ -23,68 +23,28 @@ final class ActivityStore: ObservableObject {
 // MARK: - CRUD Actions
 extension ActivityStore {
 
-    // need to specify which category
-    func create(title: String, duration: Int, cost: Int, location: String, categoryName: String) -> Activity {
+    func create(title: String, duration: Int, cost: Int, location: String, categoryName: String, details: String, image: String) {
     objectWillChange.send()
 
         let activity = Activity()
           activity._id = UUID().hashValue
-//        activity._partition =
-          activity.title = title
-          activity.duration = 20
-          activity.cost = 10
-          activity.location = "Hanover, NH"
-        activity.categoryName = categoryName
+          activity.title = title + ""
+          activity.duration = duration
+          activity.cost = cost
+          activity.location = location
+          activity.categoryName = categoryName
+          activity.image = image
+          activity.details = details
 
     do {
       let realm = try Realm()
       try realm.write {
         realm.add(activity)
       }
-        return activity
     } catch let error {
       print(error.localizedDescription)
     }
-        return activity
   }
-
-    func createWithCategory(title: String, category: Category) {
-    objectWillChange.send()
-
-        let activity = Activity()
-          activity._id = UUID().hashValue
-          activity.title = title
-//          activity.category = category
-
-    do {
-      let realm = try Realm()
-
-      try realm.write {
-        realm.add(activity)
-        category.activities.append(activity)
-
-      }
-    } catch let error {
-      // Handle error
-      print(error.localizedDescription)
-    }
-  }
-
-//  func toggleBought(ingredient: Ingredient) {
-//    objectWillChange.send()
-//    do {
-//      let realm = try Realm()
-//      try realm.write {
-//        realm.create(
-//          IngredientDB.self,
-//          value: ["id": ingredient.id, "bought": !ingredient.bought],
-//          update: .modified)
-//      }
-//    } catch let error {
-//      // Handle error
-//      print(error.localizedDescription)
-//    }
-//  }
 
   func update(
     activityID: Int,

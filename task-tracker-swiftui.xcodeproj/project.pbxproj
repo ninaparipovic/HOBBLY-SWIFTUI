@@ -13,45 +13,29 @@
 		490A51802566EFD80067A337 /* OpaqueProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490A517F2566EFD80067A337 /* OpaqueProgressView.swift */; };
 		49474284255163AF00FF9F51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49474283255163AF00FF9F51 /* LoginView.swift */; };
 		49474289255163CC00FF9F51 /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49474288255163CC00FF9F51 /* LogoutButton.swift */; };
-		494742952551645C00FF9F51 /* ManageTeamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742942551645C00FF9F51 /* ManageTeamButton.swift */; };
 		4947429D2551647400FF9F51 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947429C2551647400FF9F51 /* AppView.swift */; };
-		494742A22551649200FF9F51 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742A12551649200FF9F51 /* TasksView.swift */; };
-		494742A7255164A700FF9F51 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742A6255164A700FF9F51 /* TaskView.swift */; };
-		494742AC255164BC00FF9F51 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742AB255164BC00FF9F51 /* AddTaskView.swift */; };
-		494742B1255164D400FF9F51 /* UpdateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742B0255164D400FF9F51 /* UpdateTaskView.swift */; };
 		494742C0255165DA00FF9F51 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742BF255165DA00FF9F51 /* User.swift */; };
-		494742C8255165EB00FF9F51 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742C7255165EB00FF9F51 /* Project.swift */; };
-		494742CD2551660400FF9F51 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494742CC2551660400FF9F51 /* Task.swift */; };
 		4982D43425540B1C00E874B1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4982D43325540B1C00E874B1 /* AppState.swift */; };
-		49A7A380255D41B7008E9FA0 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7A37F255D41B7008E9FA0 /* SampleData.swift */; };
 		49A7A394255D42AB008E9FA0 /* PreviewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7A393255D42AB008E9FA0 /* PreviewHelpers.swift */; };
-		49A7A399255D8A2D008E9FA0 /* SampleRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7A398255D8A2D008E9FA0 /* SampleRealm.swift */; };
 		49CDF70D25515A5D00DCFB28 /* task_tracker_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF70C25515A5D00DCFB28 /* task_tracker_swiftuiApp.swift */; };
 		49CDF70F25515A5D00DCFB28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF70E25515A5D00DCFB28 /* ContentView.swift */; };
 		49CDF71125515A5F00DCFB28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CDF71025515A5F00DCFB28 /* Assets.xcassets */; };
 		49CDF71425515A5F00DCFB28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49CDF71325515A5F00DCFB28 /* Preview Assets.xcassets */; };
 		49CDF71F25515A5F00DCFB28 /* task_tracker_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF71E25515A5F00DCFB28 /* task_tracker_swiftuiTests.swift */; };
 		49CDF72A25515A6000DCFB28 /* task_tracker_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF72925515A6000DCFB28 /* task_tracker_swiftuiUITests.swift */; };
-		49CDF74625515CE300DCFB28 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF74525515CE300DCFB28 /* TeamsView.swift */; };
-		49CDF74E25515D1100DCFB28 /* AddTeamMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF74D25515D1100DCFB28 /* AddTeamMemberView.swift */; };
 		49CDF75425515D6800DCFB28 /* LabeledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF75325515D6800DCFB28 /* LabeledText.swift */; };
 		49CDF76125515D9900DCFB28 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF76025515D9900DCFB28 /* InputField.swift */; };
 		49CDF76625515DB000DCFB28 /* CaptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF76525515DB000DCFB28 /* CaptionLabel.swift */; };
-		49CDF76B25515DC700DCFB28 /* CallToActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF76A25515DC700DCFB28 /* CallToActionButton.swift */; };
-		49CDF77025515DDE00DCFB28 /* LabeledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CDF76F25515DDE00DCFB28 /* LabeledButton.swift */; };
-		49F2187D2562DC7A00EFDE0B /* LastUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F2187C2562DC7A00EFDE0B /* LastUpdate.swift */; };
 		51084F48300AC6D03757C3B6 /* Pods_task_tracker_swiftui_task_tracker_swiftuiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC69DDC42998E660E737A641 /* Pods_task_tracker_swiftui_task_tracker_swiftuiUITests.framework */; };
 		72AFF68E266A080A0026D9A9 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF68D266A080A0026D9A9 /* Activity.swift */; };
 		72AFF690266A08EE0026D9A9 /* ActivityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF68F266A08EE0026D9A9 /* ActivityStore.swift */; };
 		72AFF692266A1B120026D9A9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF691266A1B110026D9A9 /* HomeView.swift */; };
 		72AFF694266A1E440026D9A9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF693266A1E440026D9A9 /* ProfileView.swift */; };
-		72AFF696266A20CE0026D9A9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF695266A20CE0026D9A9 /* Category.swift */; };
-		72AFF698266A264F0026D9A9 /* CategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF697266A264F0026D9A9 /* CategoryStore.swift */; };
 		72AFF69A266A4C920026D9A9 /* MinutesSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF699266A4C920026D9A9 /* MinutesSelector.swift */; };
 		72AFF69C266A4FF30026D9A9 /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF69B266A4FF30026D9A9 /* ActivityDetail.swift */; };
 		72AFF69E266A5E260026D9A9 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF69D266A5E260026D9A9 /* SearchView.swift */; };
-		72AFF6A0266A5E7A0026D9A9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF69F266A5E7A0026D9A9 /* CommunityView.swift */; };
 		72AFF6A2266FD4A50026D9A9 /* Futura.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 72AFF6A1266FD4A50026D9A9 /* Futura.ttc */; };
+		72AFF6A6267161AE0026D9A9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AFF6A5267161AD0026D9A9 /* ImagePicker.swift */; };
 		FAE3B1C9D8F9A8D267E25D50 /* Pods_task_tracker_swiftui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F33C0A83A43F0E7C0A887F1 /* Pods_task_tracker_swiftui.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,19 +65,10 @@
 		490A517F2566EFD80067A337 /* OpaqueProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueProgressView.swift; sourceTree = "<group>"; };
 		49474283255163AF00FF9F51 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		49474288255163CC00FF9F51 /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
-		494742942551645C00FF9F51 /* ManageTeamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTeamButton.swift; sourceTree = "<group>"; };
 		4947429C2551647400FF9F51 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		494742A12551649200FF9F51 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
-		494742A6255164A700FF9F51 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		494742AB255164BC00FF9F51 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
-		494742B0255164D400FF9F51 /* UpdateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskView.swift; sourceTree = "<group>"; };
 		494742BF255165DA00FF9F51 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		494742C7255165EB00FF9F51 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		494742CC2551660400FF9F51 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		4982D43325540B1C00E874B1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		49A7A37F255D41B7008E9FA0 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		49A7A393255D42AB008E9FA0 /* PreviewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewHelpers.swift; sourceTree = "<group>"; };
-		49A7A398255D8A2D008E9FA0 /* SampleRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRealm.swift; sourceTree = "<group>"; };
 		49CDF70925515A5D00DCFB28 /* task-tracker-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "task-tracker-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CDF70C25515A5D00DCFB28 /* task_tracker_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_tracker_swiftuiApp.swift; sourceTree = "<group>"; };
 		49CDF70E25515A5D00DCFB28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,26 +81,19 @@
 		49CDF72525515A6000DCFB28 /* task-tracker-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "task-tracker-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CDF72925515A6000DCFB28 /* task_tracker_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_tracker_swiftuiUITests.swift; sourceTree = "<group>"; };
 		49CDF72B25515A6000DCFB28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49CDF74525515CE300DCFB28 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
-		49CDF74D25515D1100DCFB28 /* AddTeamMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamMemberView.swift; sourceTree = "<group>"; };
 		49CDF75325515D6800DCFB28 /* LabeledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledText.swift; sourceTree = "<group>"; };
 		49CDF76025515D9900DCFB28 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		49CDF76525515DB000DCFB28 /* CaptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionLabel.swift; sourceTree = "<group>"; };
-		49CDF76A25515DC700DCFB28 /* CallToActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallToActionButton.swift; sourceTree = "<group>"; };
-		49CDF76F25515DDE00DCFB28 /* LabeledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledButton.swift; sourceTree = "<group>"; };
-		49F2187C2562DC7A00EFDE0B /* LastUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastUpdate.swift; sourceTree = "<group>"; };
 		67E8664D207CB5A653880BC4 /* Pods-task-tracker-swiftui-task-tracker-swiftuiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task-tracker-swiftui-task-tracker-swiftuiUITests.release.xcconfig"; path = "Target Support Files/Pods-task-tracker-swiftui-task-tracker-swiftuiUITests/Pods-task-tracker-swiftui-task-tracker-swiftuiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		72AFF68D266A080A0026D9A9 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		72AFF68F266A08EE0026D9A9 /* ActivityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStore.swift; sourceTree = "<group>"; };
 		72AFF691266A1B110026D9A9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72AFF693266A1E440026D9A9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		72AFF695266A20CE0026D9A9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		72AFF697266A264F0026D9A9 /* CategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStore.swift; sourceTree = "<group>"; };
 		72AFF699266A4C920026D9A9 /* MinutesSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesSelector.swift; sourceTree = "<group>"; };
 		72AFF69B266A4FF30026D9A9 /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
 		72AFF69D266A5E260026D9A9 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		72AFF69F266A5E7A0026D9A9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		72AFF6A1266FD4A50026D9A9 /* Futura.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futura.ttc; sourceTree = "<group>"; };
+		72AFF6A5267161AD0026D9A9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A51CC2F41779CBBE42E0CB71 /* Pods-task-tracker-swiftui-task-tracker-swiftuiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-task-tracker-swiftui-task-tracker-swiftuiUITests.debug.xcconfig"; path = "Target Support Files/Pods-task-tracker-swiftui-task-tracker-swiftuiUITests/Pods-task-tracker-swiftui-task-tracker-swiftuiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0175324FB02C26F33D9EEC /* Pods_task_tracker_swiftuiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task_tracker_swiftuiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC69DDC42998E660E737A641 /* Pods_task_tracker_swiftui_task_tracker_swiftuiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_task_tracker_swiftui_task_tracker_swiftuiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,7 +136,6 @@
 				49CDF70E25515A5D00DCFB28 /* ContentView.swift */,
 				49CDF75225515D4000DCFB28 /* Components */,
 				49CDF77425515DFB00DCFB28 /* User Accounts */,
-				49CDF74425515CC500DCFB28 /* Teams */,
 				494742932551643F00FF9F51 /* Projects & Tasks */,
 			);
 			path = Views;
@@ -177,16 +144,10 @@
 		494742932551643F00FF9F51 /* Projects & Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				494742942551645C00FF9F51 /* ManageTeamButton.swift */,
 				4947429C2551647400FF9F51 /* AppView.swift */,
-				494742A12551649200FF9F51 /* TasksView.swift */,
-				494742A6255164A700FF9F51 /* TaskView.swift */,
-				494742AB255164BC00FF9F51 /* AddTaskView.swift */,
-				494742B0255164D400FF9F51 /* UpdateTaskView.swift */,
 				72AFF691266A1B110026D9A9 /* HomeView.swift */,
 				72AFF693266A1E440026D9A9 /* ProfileView.swift */,
 				72AFF69D266A5E260026D9A9 /* SearchView.swift */,
-				72AFF69F266A5E7A0026D9A9 /* CommunityView.swift */,
 			);
 			path = "Projects & Tasks";
 			sourceTree = "<group>";
@@ -195,12 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				494742BF255165DA00FF9F51 /* User.swift */,
-				494742C7255165EB00FF9F51 /* Project.swift */,
-				494742CC2551660400FF9F51 /* Task.swift */,
 				72AFF68D266A080A0026D9A9 /* Activity.swift */,
-				72AFF695266A20CE0026D9A9 /* Category.swift */,
 				72AFF68F266A08EE0026D9A9 /* ActivityStore.swift */,
-				72AFF697266A264F0026D9A9 /* CategoryStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,8 +165,6 @@
 		49A7A37E255D418E008E9FA0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				49A7A37F255D41B7008E9FA0 /* SampleData.swift */,
-				49A7A398255D8A2D008E9FA0 /* SampleRealm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,28 +242,17 @@
 			path = swiftlint;
 			sourceTree = "<group>";
 		};
-		49CDF74425515CC500DCFB28 /* Teams */ = {
-			isa = PBXGroup;
-			children = (
-				49CDF74525515CE300DCFB28 /* TeamsView.swift */,
-				49CDF74D25515D1100DCFB28 /* AddTeamMemberView.swift */,
-			);
-			path = Teams;
-			sourceTree = "<group>";
-		};
 		49CDF75225515D4000DCFB28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				49CDF75325515D6800DCFB28 /* LabeledText.swift */,
 				49CDF76025515D9900DCFB28 /* InputField.swift */,
 				49CDF76525515DB000DCFB28 /* CaptionLabel.swift */,
-				49CDF76A25515DC700DCFB28 /* CallToActionButton.swift */,
-				49CDF76F25515DDE00DCFB28 /* LabeledButton.swift */,
-				49F2187C2562DC7A00EFDE0B /* LastUpdate.swift */,
 				490A517F2566EFD80067A337 /* OpaqueProgressView.swift */,
 				0A4EA3AB258CF49B0003F0E4 /* CheckBox.swift */,
 				72AFF699266A4C920026D9A9 /* MinutesSelector.swift */,
 				72AFF69B266A4FF30026D9A9 /* ActivityDetail.swift */,
+				72AFF6A5267161AD0026D9A9 /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -573,41 +517,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4947429D2551647400FF9F51 /* AppView.swift in Sources */,
-				494742B1255164D400FF9F51 /* UpdateTaskView.swift in Sources */,
 				72AFF69C266A4FF30026D9A9 /* ActivityDetail.swift in Sources */,
 				72AFF68E266A080A0026D9A9 /* Activity.swift in Sources */,
 				72AFF692266A1B120026D9A9 /* HomeView.swift in Sources */,
-				49CDF74625515CE300DCFB28 /* TeamsView.swift in Sources */,
 				4982D43425540B1C00E874B1 /* AppState.swift in Sources */,
-				49CDF74E25515D1100DCFB28 /* AddTeamMemberView.swift in Sources */,
-				72AFF696266A20CE0026D9A9 /* Category.swift in Sources */,
-				494742CD2551660400FF9F51 /* Task.swift in Sources */,
-				494742AC255164BC00FF9F51 /* AddTaskView.swift in Sources */,
+				72AFF6A6267161AE0026D9A9 /* ImagePicker.swift in Sources */,
 				72AFF69A266A4C920026D9A9 /* MinutesSelector.swift in Sources */,
-				72AFF6A0266A5E7A0026D9A9 /* CommunityView.swift in Sources */,
-				72AFF698266A264F0026D9A9 /* CategoryStore.swift in Sources */,
 				49CDF70F25515A5D00DCFB28 /* ContentView.swift in Sources */,
-				49CDF77025515DDE00DCFB28 /* LabeledButton.swift in Sources */,
-				49A7A399255D8A2D008E9FA0 /* SampleRealm.swift in Sources */,
-				494742C8255165EB00FF9F51 /* Project.swift in Sources */,
-				49CDF76B25515DC700DCFB28 /* CallToActionButton.swift in Sources */,
 				49CDF76625515DB000DCFB28 /* CaptionLabel.swift in Sources */,
 				49A7A394255D42AB008E9FA0 /* PreviewHelpers.swift in Sources */,
 				72AFF690266A08EE0026D9A9 /* ActivityStore.swift in Sources */,
-				49F2187D2562DC7A00EFDE0B /* LastUpdate.swift in Sources */,
 				72AFF694266A1E440026D9A9 /* ProfileView.swift in Sources */,
 				49CDF76125515D9900DCFB28 /* InputField.swift in Sources */,
 				49474289255163CC00FF9F51 /* LogoutButton.swift in Sources */,
 				49CDF70D25515A5D00DCFB28 /* task_tracker_swiftuiApp.swift in Sources */,
-				494742A7255164A700FF9F51 /* TaskView.swift in Sources */,
 				49474284255163AF00FF9F51 /* LoginView.swift in Sources */,
 				72AFF69E266A5E260026D9A9 /* SearchView.swift in Sources */,
-				494742A22551649200FF9F51 /* TasksView.swift in Sources */,
-				49A7A380255D41B7008E9FA0 /* SampleData.swift in Sources */,
 				49CDF75425515D6800DCFB28 /* LabeledText.swift in Sources */,
 				0A4EA3AC258CF49C0003F0E4 /* CheckBox.swift in Sources */,
 				490A51802566EFD80067A337 /* OpaqueProgressView.swift in Sources */,
-				494742952551645C00FF9F51 /* ManageTeamButton.swift in Sources */,
 				494742C0255165DA00FF9F51 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

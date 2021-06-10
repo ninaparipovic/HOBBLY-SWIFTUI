@@ -2,7 +2,6 @@
 //  CaptionLabel.swift
 //  task-tracker-swiftui
 //
-//  Created by Andrew Morgan on 03/11/2020.
 //
 
 import SwiftUI
@@ -13,7 +12,7 @@ struct CaptionLabel: View {
     var body: some View {
         HStack {
             Text(LocalizedStringKey(title))
-                .font(.caption)
+                .font(.title3)
                 .lineLimit(5)
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.secondary)

@@ -22,13 +22,6 @@ struct MinutesSelector: View {
                                                    Text("\(self.numbers[index])")
                                                     .foregroundColor(Color.white)
                                                }
-                    //            Button {
-                    //                print("Button tapped")
-                    //            } label: {
-                    //                Text("Welcome")
-                    //                    .frame(minWidth: 0, maxWidth: 200, minHeight: 0, maxHeight: 200)
-                    //                    .font(.largeTitle)
-                    //            }
                                 }
                                 .frame(width: 50, height: 70)
                                 .clipped()
@@ -38,7 +31,6 @@ struct MinutesSelector: View {
                 .foregroundColor(Color.white)
                 Spacer()
             }
-
         }
 
 }

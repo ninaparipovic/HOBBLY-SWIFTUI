@@ -15,11 +15,8 @@ struct ActivityDetail: View {
             self.presentationMode.wrappedValue.dismiss()
             }) {
                 HStack {
-//                Image() // set image here
-//                    .aspectRatio(contentMode: .fit)
-//                    .foregroundColor(.white)
                     Image(systemName: "arrow.backward.circle.fill")
-//                        .foregroundColor(.white)
+                        .foregroundColor(Color(red: 0.102, green: 0.369, blue: 0.388))
                         .font(.title)
                 }
             }
@@ -50,16 +47,26 @@ struct ActivityDetail: View {
                         VStack(alignment: .leading) {
                             Text("Details")
                             Text("$\(activity.cost) per person")
+                            Spacer()
                         }
+                        .font(Font.custom("Futura", size: 16))
                         Spacer()
                         VStack {
                             HStack {
                                 Image(systemName: "mappin")
                                 Text(activity.location)
+                                    .font(Font.custom("Futura", size: 16))
+
                             }
                             Spacer()
                         }
                     }.padding()
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 80, alignment: .topLeading)
+                    VStack {
+                        Text(activity.details)
+                            .font(Font.custom("Futura", size: 16))
+                        Spacer()
+                    }
                     Spacer()
                 }
 Spacer()

@@ -6,104 +6,62 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct SearchView: View {
-//    var item: Activity = testData[0].activities[0]
+    let activities: [Activity]
+    let categories: [String]
+    @State private var searchInput: String = ""
+    @EnvironmentObject var activityStore: ActivityStore
+    @EnvironmentObject var state: AppState
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HStack {
                 Image(systemName: "magnifyingglass")
-                Text("Users, activities or interests")
+
+                TextField("Users, activities or interests", text: $searchInput)
+                    .font(Font.custom("Futura", size: 16))
+                    .padding(.all, 5)
+                    .background(Color(red: 0.102, green: 0.369, blue: 0.388))
+                    .opacity(0.65)
+                    .cornerRadius(10)
+                    .foregroundColor(.white)
+                    .font(.body)
                 Spacer()
             }
             .padding(30)
-            Text("People you may know")
-            PeopleYouMayKnow()
-                .padding(.bottom)
-            Text("Trending")
-//            HStack {
-//                NavigationLink(destination: ActivityDetail(activity: item)) {
-//                    VStack {
-//                        Image("kaf1")
-//                            .resizable()
-//                            .frame(width: 130, height: 130)
-//                        Text("KAF")
-//                    }
-//                }
-//                NavigationLink(destination: ActivityDetail(activity: item)) {
-//                    VStack {
-//                        Image("kaf1")
-//                            .resizable()
-//                            .frame(width: 130, height: 130)
-//                        Text("KAF")
-//                    }
-//                }
-//            }
-            Text("Browse All")
+            ScrollView {
+                ForEach(categories, id: \.self) { cat in
+                    Text(cat)
+                        .font(Font.custom("Futura", size: 33))
+                    ScrollView(.horizontal) {
+                        HStack {
+                            ForEach(sort(category: cat)) { activity in
+                                ActivityCell(activity: activity)
+                                    .environmentObject(state)
+
+                            }
+                        }
+
+                    }
+                }
+
+                   }
             Spacer()
         }
     }
-}
+    func sort(category: String) -> Results<Activity> {
+        var predicate: String
+        if searchInput.isEmpty {
+            predicate = "categoryName == %@"
+            let filteredActivities = activityStore.acitvityResults.filter(predicate, category)
+            return filteredActivities
+        } else {
+            predicate = "categoryName == %@ AND title CONTAINS[c] %@"
+            let filteredActivities = activityStore.acitvityResults.filter(predicate, category, searchInput)
+            return filteredActivities
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            SearchView()
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
-        }
-    }
-}
-
-struct PeopleYouMayKnow: View {
-    var body: some View {
-        HStack {
-            Spacer()
-            NavigationLink(destination: Text("Anna's Profile")) {
-                VStack {
-                    Image("UserDefaultImage")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .cornerRadius(50)
-                    Text("Anna")
-                    Text("Robertson")
-                }
-            }
-            Spacer()
-            NavigationLink(destination: Text("Anna's Profile")) {
-                VStack {
-                    Image("UserDefaultImage")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .cornerRadius(50)
-                    Text("Anna")
-                    Text("Robertson")
-                }
-            }
-            Spacer()
-            NavigationLink(destination: Text("Anna's Profile")) {
-                VStack {
-                    Image("UserDefaultImage")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .cornerRadius(50)
-                    Text("Anna")
-                    Text("Robertson")
-                }
-            }
-            Spacer()
-            NavigationLink(destination: Text("Anna's Profile")) {
-                VStack {
-                    Image("UserDefaultImage")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .cornerRadius(50)
-                    Text("Anna")
-                    Text("Robertson")
-                }
-            }
-            Spacer()
         }
     }
 }

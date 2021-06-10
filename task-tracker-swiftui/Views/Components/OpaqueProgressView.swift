@@ -2,7 +2,6 @@
 //  OpaqueProgressView.swift
 //  task-tracker-swiftui
 //
-//  Created by Andrew Morgan on 19/11/2020.
 //
 
 import SwiftUI

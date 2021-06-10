@@ -2,7 +2,6 @@
 //  LoginView.swift
 //  task-tracker-swiftui
 //
-//  Created by Andrew Morgan on 03/11/2020.
 //
 
 import SwiftUI
@@ -29,9 +28,17 @@ struct LoginView: View {
             InputField(title: "Password",
                        text: self.$password,
                        showingSecureField: true)
-            CallToActionButton(
-                title: newUser ? "Register User" : "Log In",
-                action: { self.userAction(username: self.username, password: self.password) })
+            Button(action: { self.userAction(username: self.username, password: self.password) }) {
+                Text(newUser ? "Register User" : "Log In")
+                    .font(.title3)
+                    .foregroundColor(Color(red: 0.102, green: 0.369, blue: 0.388))
+                    .padding()
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color(red: 0.102, green: 0.369, blue: 0.388), lineWidth: 2)
+                    )
+            }
+            .padding()
             HStack {
                 CheckBox(title: "Register new user", isChecked: $newUser)
                 Spacer()

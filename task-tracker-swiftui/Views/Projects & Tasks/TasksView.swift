@@ -28,7 +28,7 @@ struct TasksView: View {
                 .renderingMode(.original)
 
         })
-        .sheet(isPresented: $showingSheet) { AddTaskView(partition: project?.partition ?? "") }
+        .sheet(isPresented: $showingSheet) { AddTaskView(partition: "public" ?? "") }
     }
 }
 

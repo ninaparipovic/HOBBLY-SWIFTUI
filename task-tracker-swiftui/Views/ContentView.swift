@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  task-tracker-swiftui
 //
-//  Created by Andrew Morgan on 03/11/2020.
 //
 
 import SwiftUI
@@ -19,8 +18,8 @@ struct ContentView: View {
                 VStack {
                     if state.loggedIn {
                         AppView()
+                            .environmentObject(AppState())
                             .environmentObject(ActivityStore(realm: realm))
-                            .environmentObject(CategoryStore(realm: realm))
                     } else {
                         LoginView()
                     }

@@ -18,18 +18,19 @@ class AppState: ObservableObject {
     @Published var error: String?
 
     var user: User?
+    @Published var image: Image?
 
     var loggedIn: Bool {
         app.currentUser != nil && app.currentUser?.state == .loggedIn && user != nil
     }
 
     init() {
-
         loginPublisher
             .receive(on: DispatchQueue.main)
             .flatMap { user -> RealmPublishers.AsyncOpenPublisher in
                 self.shouldIndicateActivity = true
                 let realmConfig = user.configuration(partitionValue: "user=\(user.id)")
+                print(user.id)
                 return Realm.asyncOpen(configuration: realmConfig)
             }
             .receive(on: DispatchQueue.main)

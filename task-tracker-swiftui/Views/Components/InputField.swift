@@ -2,7 +2,6 @@
 //  InputField.swift
 //  task-tracker-swiftui
 //
-//  Created by Andrew Morgan on 03/11/2020.
 //
 
 import SwiftUI
@@ -23,16 +22,21 @@ struct InputField: View {
     var body: some View {
         VStack(spacing: Dimensions.noSpacing) {
             CaptionLabel(title: title)
+                .padding(.leading, 5)
             HStack(spacing: Dimensions.noSpacing) {
                 if !showingSecureField {
                     TextField("", text: $text)
-                        .padding(.bottom, Dimensions.bottomPadding)
-                        .foregroundColor(.primary)
+                        .padding(.all, 5)
+                        .background(Color(red: 0.102, green: 0.369, blue: 0.388))
+                        .cornerRadius(10)
+                        .foregroundColor(.white)
                         .font(.body)
                 } else {
                     SecureField("", text: $text)
-                        .padding(.bottom, Dimensions.bottomPadding)
-                        .foregroundColor(.primary)
+                        .padding(.all, 5)
+                        .background(Color(red: 0.102, green: 0.369, blue: 0.388))
+                        .cornerRadius(10)
+                        .foregroundColor(.white)
                         .font(.body)
                 }
             }
